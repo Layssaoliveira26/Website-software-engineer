@@ -17,3 +17,23 @@ if(idade < 18){
 let salario = 3000.95
 let valor_final = salario - (0.1 * salario)
 console.log("O salário final é de R$:", valor_final)
+//Exercício 4. Verificação de Estoque
+//Descrição: Uma loja está organizando seu inventário. Ela tem um array com o número de unidades de cada produto.
+//Escreva um programa que verifique se algum produto está com menos de 5 unidades em estoque e exiba uma mensagem
+//avisando sobre o reabastecimento.
+let unidProdutos = [5, 4, 6, 7, 8, 0, -2];
+/*for(let i = 0; i < unidProdutos.length; i++){
+    if(unidProdutos[i] < 5){
+        console.log("É necessário que o estoque desse produto seja reabastecido");
+    }else{
+        console.log("O estoque do produto está ok");
+    }
+}*/
+
+for(let produto of unidProdutos){
+    if(produto < 5){
+        console.log("É necessário que o estoque desse produto seja reabastecido,");
+    }else{
+        console.log("O estoque do produto está ok!");
+    }
+}
